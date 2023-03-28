@@ -1,13 +1,14 @@
 import React from "react";
 import profilePic from "../assects/profile.png";
 import coverPic from "../assects/cover.png";
+import CreatePost from "../components/CreatePost";
 
 const Home = () => {
   const num = [1, 2, 3, 4];
   return (
-    <div className=" max-w-6xl mx-auto pt-6 px-2">
+    <div className=" max-w-7xl mx-auto pt-6 px-2">
       <div className="">
-        <section className="grid grid-cols-8 gap-6">
+        <section className="grid grid-cols-10 gap-6">
           {/* my profile section  */}
           <div className="col-span-2">
             <div className="rounded-md bg-white">
@@ -25,9 +26,9 @@ const Home = () => {
                 </div>
               </div>
               {/* Bio section  */}
-              <div className="-mt-4 text-center">
+              <div className="-mt-4 text-center mx-1">
                 <h2 className="text-xl font-semibold">Md. Omar Faruk</h2>
-                <p className=" font-mono">
+                <p className=" font-mono text-sm">
                   Web Developer || MERN Stack Developer
                 </p>
                 <hr />
@@ -39,12 +40,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4">
-            <div className="bg-white">
-              <p>hee</p>
-            </div>
+          <div className="col-span-5">
+            <CreatePost></CreatePost>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-3">
             <div>
               <div className=" bg-white rounded-md mb-4">
                 <h2 className="p-2 rounded-t-md text-lg font-semibold bg-slate-100">
@@ -76,7 +75,7 @@ const Home = () => {
               </div>
               <div className=" bg-white rounded-md mb-4">
                 <h2 className="p-2 rounded-t-md text-lg font-semibold bg-slate-100">
-                  Your Connections
+                  People you may know
                 </h2>
                 {/* my connections  */}
                 {num.map((x) => (
@@ -96,9 +95,11 @@ const Home = () => {
                         <small className="text-sm text-gray-400">
                           Company. Web Developer
                         </small>
-                        <button className="btn btn-sm btn-outline bg-gray-200 capitalize rounded-full hover:bg-green-800 hover:text-white">
-                          + Connect
-                        </button>
+                        <div>
+                          <button className="mt-1 btn btn-sm btn-outline bg-gray-200 capitalize rounded-full hover:bg-green-800 hover:text-white">
+                            + Connect
+                          </button>
+                        </div>
                       </div>
                     </div>
                     <hr />
