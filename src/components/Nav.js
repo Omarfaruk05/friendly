@@ -15,8 +15,8 @@ const Nav = () => {
     e.preventDefault();
   };
   return (
-    <div>
-      <div>
+    <div className="sticky top-0 bg-white z-10">
+      <div className="py-2 mx-2 md:mx-4">
         {/* search area for movile  */}
         {showSearch && (
           <div className="absolute px-2 pb-2 w-full bg-base-100 mx-auto ">
@@ -43,7 +43,7 @@ const Nav = () => {
           </div>
         )}
         {/* nav area  */}
-        <div className="m-2 grid grid-cols-3 justify-between items-center">
+        <div className="grid grid-cols-3 justify-between items-center">
           {/* logo  */}
           <div>
             <h2 className="text-lg uppercase font-bold text-green-700">
@@ -95,8 +95,8 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <hr className="shadow" />
       </div>
+      <hr className="shadow" />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profilePic from "../assects/profile.png";
+import profilePic from "../assects/edward.jpeg";
 import {
   PencilIcon,
   PhotoIcon,
@@ -38,7 +38,7 @@ const CreatePost = () => {
           </div>
           <div onChange={(e) => setPost(e.target.value)} className="col-span-6">
             <textarea
-              className="p-1 -ml-3 min-h-16 outline-none w-full font-semibold"
+              className="p-1 -ml-3 h-[90px] outline-none w-full font-semibold"
               placeholder="Write something about you...
               "
             ></textarea>

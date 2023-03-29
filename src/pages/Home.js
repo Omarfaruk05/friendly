@@ -1,17 +1,19 @@
 import React from "react";
-import profilePic from "../assects/profile.png";
+import profilePic1 from "../assects/profile.png";
+import profilePic from "../assects/edward.jpeg";
 import coverPic from "../assects/cover.png";
 import CreatePost from "../components/CreatePost";
+import Posts from "../components/Posts";
 
 const Home = () => {
   const num = [1, 2, 3, 4];
   return (
     <div className=" max-w-7xl mx-auto pt-6 px-2">
-      <div className="">
+      <div>
         <section className="grid grid-cols-10 gap-6">
           {/* my profile section  */}
-          <div className="col-span-2">
-            <div className="rounded-md bg-white">
+          <div className="col-span-3 md:col-span-2">
+            <div className="sticky top-16 rounded-md bg-white cursor-pointer">
               {/* photo  */}
               <div>
                 <div>
@@ -32,7 +34,7 @@ const Home = () => {
                   Web Developer || MERN Stack Developer
                 </p>
                 <hr />
-                <div className="flex justify-between p-2 m-1 rounded-sm hover:bg-gray-200">
+                <div className="flex justify-between p-2 m-1 rounded-sm hover:bg-gray-200 cursor-pointer">
                   <p className="text-gray-400 font-semibold">Connections</p>
                   <p className="font-semibold">7</p>
                 </div>
@@ -40,10 +42,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-5">
+          <div className="col-span-7 md:col-span-5">
             <CreatePost></CreatePost>
+            <Posts></Posts>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 hidden md:block ">
             <div>
               <div className=" bg-white rounded-md mb-4">
                 <h2 className="p-2 rounded-t-md text-lg font-semibold bg-slate-100">
@@ -84,7 +87,7 @@ const Home = () => {
                       <div>
                         <img
                           className="rounded-full w-14"
-                          src={profilePic}
+                          src={profilePic1}
                           alt=""
                         />
                       </div>
