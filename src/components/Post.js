@@ -12,7 +12,7 @@ import {
 const Post = ({ postPic }) => {
   const [comment, setComment] = useState(false);
   return (
-    <div className="bg-white p-2 my-3 rounded-md">
+    <div className="bg-white p-2 mb-3 rounded-md">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <div>

@@ -12,7 +12,7 @@ const CreatePost = () => {
   console.log(post);
   return (
     <div>
-      <div className="bg-white rounded-md">
+      <div className="bg-white rounded-md mb-2">
         <div className="grid grid-cols-3 gap-2 justify-between p-2">
           <button className="btn btn-sm w-full capitalize rounded-none gap-2">
             <PencilIcon className="h-4 w-4" />

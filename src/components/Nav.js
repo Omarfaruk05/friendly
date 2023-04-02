@@ -7,6 +7,7 @@ import {
   MagnifyingGlassIcon,
   Squares2X2Icon,
 } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -46,9 +47,11 @@ const Nav = () => {
         <div className="grid grid-cols-3 justify-between items-center">
           {/* logo  */}
           <div>
-            <h2 className="text-lg uppercase font-bold text-green-700">
-              Friendly
-            </h2>
+            <Link to="/">
+              <h2 className="text-lg uppercase font-bold text-green-700">
+                Friendly
+              </h2>
+            </Link>
           </div>
           {/* search  */}
           <div className="text-center">
